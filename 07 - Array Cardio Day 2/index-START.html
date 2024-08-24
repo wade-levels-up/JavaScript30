@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <title>Array Cardio 💪💪</title>
   <link rel="icon" href="https://fav.farm/🔥" />
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
@@ -29,13 +35,39 @@
     // Array.prototype.some() // is at least one person 19 or older?
     // Array.prototype.every() // is everyone 19 or older?
 
+    // ✅
+    
+    // // Some...
+    // let containsOverNineteen = people.some(item => (2024 - item.year) >= 19)
+    // console.log(containsOverNineteen);
+
+    // // Every...
+    // let areAllPeopleOverNineteen = people.every(item => (2024 - item.year) >= 19);
+    // console.log(areAllPeopleOverNineteen);
+
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423
 
+    // ✅
+    // let specificUser = comments.find(item => item.id === 823423);
+    // alert (specificUser.text);
+
+
+
     // Array.prototype.findIndex()
     // Find the comment with this ID
     // delete the comment with the ID of 823423
+
+    // ✅
+
+    // function removeIndexOfArr(arr, numToRmv) {
+    //   let toRemove = arr.findIndex(item => item.id === numToRmv);
+    //   comments.splice(toRemove, 1);
+    // }
+
+    // let user = removeIndexOfArr(comments, 523423);
+    // console.table(comments);
 
   </script>
 </body>
